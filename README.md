@@ -94,5 +94,5 @@ Incase of any issues at hand, please email me at timohmugendi@gmail.com
 ## Preview
 
 ### License
-<a href=''>MIT LICENSE</a>
+<a href='https://github.com/Timoh97/FruitVending/blob/master/LICENSE'>MIT LICENSE</a>
  [**TIMOTHY MUGENDI**]
