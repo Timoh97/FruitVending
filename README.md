@@ -33,8 +33,8 @@ This is an online fruit vending site
 #### Cloning the repository
 * Open Terminal:
 ```bash
-        $ 
-        $ cd JSC-Online
+        $ https://github.com/Timoh97/FruitVending.git
+        $ cd FruitVending
         $ code . or atom . based on your text editor 
 ```
 * Navigate into the folder, install and activate virtual environment
@@ -84,7 +84,7 @@ This is an online fruit vending site
 ## Technologies Used
 * markdown
 
-* flask_Bootstrap4 - for bootstrap version 4
+* flask-bootstrap4 - for bootstrap version 4
 
 * Heroku - online deployment
 
@@ -94,5 +94,5 @@ Incase of any issues at hand, please email me at timohmugendi@gmail.com
 ## Preview
 
 ### License
-<a href='>MIT LICENSE</a>
+<a href=''>MIT LICENSE</a>
  [**TIMOTHY MUGENDI**]
