@@ -5,11 +5,14 @@ from flask import Flask
 from config import config_options
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy #initialize db
-
+from flask_login import LoginManager #loggin
 
 bootstrap=Bootstrap
 
 db = SQLAlchemy() #initialize db
+login_manager = LoginManager() # allows login
+login_manager.session_protection = 'strong'
+login_manager.login_view = 'auth.login'
 
 def create_app(config_name):
     app=Flask(__name__)

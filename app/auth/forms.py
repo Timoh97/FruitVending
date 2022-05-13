@@ -27,3 +27,8 @@ class RegistrationForm(FlaskForm):
             raise ValidationError('That username is taken')
         
         #registering users
+class LoginForm(FlaskForm):
+    email = StringField('Your Email Address')
+    password = PasswordField('Password',validators =[])
+    remember = BooleanField('Remember me')
+    submit = SubmitField('Sign In')
