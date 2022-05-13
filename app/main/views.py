@@ -3,5 +3,6 @@ from . import main
 
 @main.route('/')
 def index():
-    title='Fruit Vending application'
-    return render_template("index.html",title=title)
+    title=''
+    subject='applicationdevelopment'
+    return render_template("index.html",name=title,subject=subject)
