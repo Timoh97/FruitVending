@@ -3,4 +3,5 @@ from . import main
 
 @main.route('/')
 def index():
-    return render_template("index.html")
+    title='Fruit Vending application'
+    return render_template("index.html",title=title)
