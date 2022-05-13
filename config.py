@@ -9,6 +9,7 @@ class Config:
    
 
 class ProdConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://tim:12345@localhost/fruitsvending'
     pass
 
 
