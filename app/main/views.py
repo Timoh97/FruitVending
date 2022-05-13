@@ -7,7 +7,7 @@ def index():
     return render_template("index.html")
 
 @main.route('/cart')
-@login_required
+# @login_required
 def cart():
     return render_template("cart.html")
 
@@ -31,22 +31,22 @@ def indexx():
     return render_template("index_2.html")
 
 @main.route('/news')
-@login_required
+# @login_required
 def news():
 
     return render_template("news.html")
 
 @main.route('/shop')
-@login_required
+# @login_required
 def shop():
     return render_template("shop.html")
 
 @main.route('/singles')
-@login_required
+# @login_required
 def single():
     return render_template("single-news.html")
 
 @main.route('/product')
-@login_required
+# @login_required
 def product():
     return render_template("single-product.html") 
