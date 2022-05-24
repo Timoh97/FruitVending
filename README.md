@@ -91,7 +91,12 @@ This is an online fruit vending site
 
 ## Support and contact details
 Incase of any issues at hand, please email me at timohmugendi@gmail.com
-## Preview
+## Home preview
+ <img src="./screenshots/1.png" alt="screenshot" />
+
+  <img src="./screenshots/2.png" alt="screenshot" />
+
+  <img src="./screenshots/3.png" alt="screenshot" />
 
 ### License
 <a href='https://github.com/Timoh97/FruitVending/blob/master/LICENSE'>MIT LICENSE</a>
