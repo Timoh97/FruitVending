@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% content block %}
+{% block content  %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +53,7 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index.html">
+							<a href="{{url_for('main.index')}}">
 								<img src="static/assets/img/logo.png" alt="">
 							</a>
 						</div>
@@ -64,40 +64,40 @@
 							<ul>
 								<li class="current-list-item"><a href="#">Home</a>
 									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
+										<li><a href="{{url_for('main.index')}}">Static Home</a></li>
+										<li><a href="{{url_for('main.indexx')}}">Slider Home</a></li>
 									</ul>
 								</li>
-								<li><a href="about.html">About</a></li>
+								<li><a href="{{url_for('main.about')}}">About</a></li>
 								<li><a href="#">Pages</a>
 									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
+										
+										<li><a href="{{url_for('main.about')}}">About</a></li>
+										<li><a href="{{url_for('main.cart')}}">Cart</a></li>
+										<li><a href="{{url_for('main.checkout')}}">Check Out</a></li>
+										<li><a href="{{url_for('main.contact')}}">Contact</a></li>
+										<li><a href="{{url_for('main.news')}}">News</a></li>
+										<li><a href="{{url_for('main.shop')}}">Shop</a></li>
 									</ul>
 								</li>
-								<li><a href="news.html">News</a>
+								<li><a href="{{url_for('main.news')}}">News</a>
 									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
+										<li><a href="{{url_for('main.news')}}">News</a></li>
+										<li><a href="{{url_for('main.single')}}">Single News</a></li>
 									</ul>
 								</li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
+								<li><a href="{{url_for('main.contact')}}">Contact</a></li>
+								<li><a href="{{url_for('main.shop')}}">Shop</a>
 									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
+										<li><a href="{{url_for('main.shop')}}">Shop</a></li>
+										<li><a href="{{url_for('main.checkout')}}">Check Out</a></li>
+										<li><a href="{{url_for('main.product')}}">Single Product</a></li>
+										<li><a href="{{url_for('main.cart')}}">Cart</a></li>
 									</ul>
 								</li>
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="shopping-cart" href="{{url_for('main.cart')}}"><i class="fas fa-shopping-cart"></i></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
@@ -218,32 +218,32 @@
 						<div class="recent-posts">
 							<h4>Recent Posts</h4>
 							<ul>
-								<li><a href="single-news.html">You will vainly look for fruit on it in autumn.</a></li>
-								<li><a href="single-news.html">A man's worth has its season, like tomato.</a></li>
-								<li><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></li>
-								<li><a href="single-news.html">Fall in love with the fresh orange</a></li>
-								<li><a href="single-news.html">Why the berries always look delecious</a></li>
+								<li><a href="{{url_for('main.single')}}">You will vainly look for fruit on it in autumn.</a></li>
+								<li><a href="{{url_for('main.single')}}">A man's worth has its season, like tomato.</a></li>
+								<li><a href="{{url_for('main.single')}}">Good thoughts bear good fresh juicy fruit.</a></li>
+								<li><a href="{{url_for('main.single')}}">Fall in love with the fresh orange</a></li>
+								<li><a href="{{url_for('main.single')}}">Why the berries always look delecious</a></li>
 							</ul>
 						</div>
 						<div class="archive-posts">
 							<h4>Archive Posts</h4>
 							<ul>
-								<li><a href="single-news.html">JAN 2019 (5)</a></li>
-								<li><a href="single-news.html">FEB 2019 (3)</a></li>
-								<li><a href="single-news.html">MAY 2019 (4)</a></li>
-								<li><a href="single-news.html">SEP 2019 (4)</a></li>
-								<li><a href="single-news.html">DEC 2019 (3)</a></li>
+								<li><a href="{{url_for('main.single')}}">JAN 2019 (5)</a></li>
+								<li><a href="{{url_for('main.single')}}">FEB 2019 (3)</a></li>
+								<li><a href="{{url_for('main.single')}}">MAY 2019 (4)</a></li>
+								<li><a href="{{url_for('main.single')}}">SEP 2019 (4)</a></li>
+								<li><a href="{{url_for('main.single')}}">DEC 2019 (3)</a></li>
 							</ul>
 						</div>
 						<div class="tag-section">
 							<h4>Tags</h4>
 							<ul>
-								<li><a href="single-news.html">Apple</a></li>
-								<li><a href="single-news.html">Strawberry</a></li>
-								<li><a href="single-news.html">BErry</a></li>
-								<li><a href="single-news.html">Orange</a></li>
-								<li><a href="single-news.html">Lemon</a></li>
-								<li><a href="single-news.html">Banana</a></li>
+								<li><a href="{{url_for('main.single')}}">Apple</a></li>
+								<li><a href="{{url_for('main.single')}}">Strawberry</a></li>
+								<li><a href="{{url_for('main.single')}}">BErry</a></li>
+								<li><a href="{{url_for('main.single')}}">Orange</a></li>
+								<li><a href="{{url_for('main.single')}}">Lemon</a></li>
+								<li><a href="{{url_for('main.single')}}">Banana</a></li>
 							</ul>
 						</div>
 					</div>
@@ -295,9 +295,9 @@
 					<div class="footer-box get-in-touch">
 						<h2 class="widget-title">Get in Touch</h2>
 						<ul>
-							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-							<li>support@fruitkha.com</li>
-							<li>+00 111 222 3333</li>
+							<li>34/8, Nairobi, Kenya.</li>
+							<li>timohmugendi@gmail.com</li>
+							<li>+254 791 417 147</li>
 						</ul>
 					</div>
 				</div>
@@ -305,11 +305,11 @@
 					<div class="footer-box pages">
 						<h2 class="widget-title">Pages</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="{{url_for('main.index')}}">Home</a></li>
+							<li><a href="{{url_for('main.about')}}">About</a></li>
+							<li><a href="{{url_for('main.shop')}}">Shop</a></li>
+							<li><a href="{{url_for('main.news')}}">News</a></li>
+							<li><a href="{{url_for('main.contact')}}">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -333,7 +333,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.</p>
+					<p>Copyrights &copy; 2022- <a href="">Timothy Mugendi</a>,  All Rights Reserved.</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">

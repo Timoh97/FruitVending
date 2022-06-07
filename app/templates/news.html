@@ -52,7 +52,7 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index.html">
+							<a href="{{url_for('main.index')}}">
 								<img src="static/assets/img/logo.png" alt="">
 							</a>
 						</div>
@@ -63,40 +63,40 @@
 							<ul>
 								<li class="current-list-item"><a href="#">Home</a>
 									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
+										<li><a href="{{url_for('main.index')}}">Static Home</a></li>
+										<li><a href="{{url_for('main.indexx')}}">Slider Home</a></li>
 									</ul>
 								</li>
-								<li><a href="about.html">About</a></li>
+								<li><a href="{{url_for('main.about')}}">About</a></li>
 								<li><a href="#">Pages</a>
 									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
+										
+										<li><a href="{{url_for('main.about')}}">About</a></li>
+										<li><a href="{{url_for('main.cart')}}">Cart</a></li>
+										<li><a href="{{url_for('main.checkout')}}">Check Out</a></li>
+										<li><a href="{{url_for('main.contact')}}">Contact</a></li>
+										<li><a href="{{url_for('main.news')}}">News</a></li>
+										<li><a href="{{url_for('main.shop')}}">Shop</a></li>
 									</ul>
 								</li>
-								<li><a href="news.html">News</a>
+								<li><a href="{{url_for('main.news')}}">News</a>
 									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
+										<li><a href="{{url_for('main.news')}}">News</a></li>
+										<li><a href="{{url_for('main.single')}}">Single News</a></li>
 									</ul>
 								</li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
+								<li><a href="{{url_for('main.contact')}}">Contact</a></li>
+								<li><a href="{{url_for('main.shop')}}">Shop</a>
 									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
+										<li><a href="{{url_for('main.shop')}}">Shop</a></li>
+										<li><a href="{{url_for('main.checkout')}}">Check Out</a></li>
+										<li><a href="{{url_for('main.single')}}">Single Product</a></li>
+										<li><a href="{{url_for('main.cart')}}">Cart</a></li>
 									</ul>
 								</li>
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="shopping-cart" href="{{url_for('main.cart')}}"><i class="fas fa-shopping-cart"></i></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
@@ -208,29 +208,29 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="single-latest-news">
-						<a href="single-news.html"><div class="latest-news-bg news-bg-5"></div></a>
+						<a href="{{url_for('main.news')}}"><div class="latest-news-bg news-bg-5"></div></a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">Why the berries always look delecious</a></h3>
+							<h3><a href="{{url_for('main.news')}}">Why the berries always look delecious</a></h3>
 							<p class="blog-meta">
 								<span class="author"><i class="fas fa-user"></i> Admin</span>
 								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
 							</p>
 							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
-							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+							<a href="{{url_for('main.single')}}" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="single-latest-news">
-						<a href="single-news.html"><div class="latest-news-bg news-bg-6"></div></a>
+						<a href="{{url_for('main.news')}}"><div class="latest-news-bg news-bg-6"></div></a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">Love for fruits are genuine of John Doe</a></h3>
+							<h3><a href="{{url_for('main.news')}}">Love for fruits are genuine of John Doe</a></h3>
 							<p class="blog-meta">
 								<span class="author"><i class="fas fa-user"></i> Admin</span>
 								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
 							</p>
 							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
-							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+							<a href="{{url_for('main.news')}}" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -309,11 +309,11 @@
 					<div class="footer-box pages">
 						<h2 class="widget-title">Pages</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="{{url_for('main.index')}}">Home</a></li>
+							<li><a href="{{url_for('main.about')}}">About</a></li>
+							<li><a href="{{url_for('main.shop')}}">Shop</a></li>
+							<li><a href="{{url_for('main.news')}}">News</a></li>
+							<li><a href="{{url_for('main.contact')}}">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -337,7 +337,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.</p>
+					<p>Copyrights &copy; 2022 - <a href="">Timothy Mugendi</a>,  All Rights Reserved.</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">
