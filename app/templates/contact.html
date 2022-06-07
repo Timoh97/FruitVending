@@ -92,18 +92,18 @@
 										<li><a href="{{url_for('main.single')}}">Single News</a></li>
 									</ul>
 								</li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
+								<li><a href="{{url_for('main.contact')}}">Contact</a></li>
+								<li><a href="{{url_for('main.shop')}}">Shop</a>
 									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
+										<li><a href="{{url_for('main.shop')}}">Shop</a></li>
+										<li><a href="{{url_for('main.checkout')}}">Check Out</a></li>
+										<li><a href="{{url_for('main.single')}}">Single Product</a></li>
+										<li><a href="{{url_for('main.cart')}}">Cart</a></li>
 									</ul>
 								</li>
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="shopping-cart" href="{{url_for('main.cart')}}"><i class="fas fa-shopping-cart"></i></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
@@ -183,7 +183,7 @@
 					<div class="contact-form-wrap">
 						<div class="contact-form-box">
 							<h4><i class="fas fa-map"></i> Shop Address</h4>
-							<p>34/8, East Hukupara <br> Gifirtok, Sadan. <br> Country Name</p>
+							<p>34/8, town- <br> Nairobi, Kenya - <br> Country Name</p>
 						</div>
 						<div class="contact-form-box">
 							<h4><i class="far fa-clock"></i> Shop Hours</h4>
@@ -191,7 +191,7 @@
 						</div>
 						<div class="contact-form-box">
 							<h4><i class="fas fa-address-book"></i> Contact</h4>
-							<p>Phone: +00 111 222 3333 <br> Email: support@fruitkha.com</p>
+							<p>Phone: +254 791 417 147 <br> Email: timohmugendi@gmail.com</p>
 						</div>
 					</div>
 				</div>
@@ -233,9 +233,9 @@
 					<div class="footer-box get-in-touch">
 						<h2 class="widget-title">Get in Touch</h2>
 						<ul>
-							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
+							<li>34/8, Nairobi, Kenya.</li>
 							<li>support@fruitkha.com</li>
-							<li>+00 111 222 3333</li>
+							<li>+254 791 417 147</li>
 						</ul>
 					</div>
 				</div>
@@ -243,11 +243,11 @@
 					<div class="footer-box pages">
 						<h2 class="widget-title">Pages</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="{{url_for('main.index')}}">Home</a></li>
+							<li><a href="{{url_for('main.about')}}">About</a></li>
+							<li><a href="{{url_for('main.shop')}}">Shop</a></li>
+							<li><a href="{{url_for('main.news')}}">News</a></li>
+							<li><a href="{{url_for('main.contact')}}">Contact</a></li>
 						</ul>
 					</div>
 				</div>
