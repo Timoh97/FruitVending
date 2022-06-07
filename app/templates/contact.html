@@ -6,7 +6,7 @@
 
 
 {% extends 'base.html'%}
-{% content block %}
+{%  block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +59,7 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index.html">
+							<a href="{{url_for('main.about')}}">
 								<img src="static/assets/img/logo.png" alt="">
 							</a>
 						</div>
@@ -70,26 +70,26 @@
 							<ul>
 								<li class="current-list-item"><a href="#">Home</a>
 									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
+										<li><a href="{{url_for('main.about')}}l">Static Home</a></li>
+										<li><a href="{{url_for('main.indexx')}}">Slider Home</a></li>
 									</ul>
 								</li>
-								<li><a href="about.html">About</a></li>
+								<li><a href="{{url_for('main.about')}}">About</a></li>
 								<li><a href="#">Pages</a>
 									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
+										
+										<li><a href="{{url_for('main.about')}}">About</a></li>
+										<li><a href="{{url_for('main.cart')}}">Cart</a></li>
+										<li><a href="{{url_for('main.checkout')}}">Check Out</a></li>
+										<li><a href="{{url_for('main.contact')}}">Contact</a></li>
+										<li><a href="{{url_for('main.news')}}">News</a></li>
+										<li><a href="{{url_for('main.shop')}}">Shop</a></li>
 									</ul>
 								</li>
-								<li><a href="news.html">News</a>
+								<li><a href="{{url_for('main.news')}}">News</a>
 									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
+										<li><a href="{{url_for('main.news')}}">News</a></li>
+										<li><a href="{{url_for('main.single')}}">Single News</a></li>
 									</ul>
 								</li>
 								<li><a href="contact.html">Contact</a></li>
@@ -271,7 +271,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.</p>
+					<p>Copyrights &copy; 2022 - <a href="">Timothy Mugendi</a>,  All Rights Reserved.</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">
@@ -314,4 +314,4 @@
 	
 </body>
 </html>
-{% endblock%}
+{% endblock %}
