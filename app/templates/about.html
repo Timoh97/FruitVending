@@ -54,7 +54,7 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index.html">
+							<a href="{{url_for('main.index')}}">
 								<img src="static/assets/img/logo.png" alt="">
 							</a>
 						</div>
@@ -65,40 +65,40 @@
 							<ul>
 								<li class="current-list-item"><a href="#">Home</a>
 									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
+										<li><a href="{{url_for('main.index')}}">Static Home</a></li>
+										<li><a href="{{url_for('main.indexx')}}">Slider Home</a></li>
 									</ul>
 								</li>
-								<li><a href="about.html">About</a></li>
+								<li><a href="{{url_for('main.about')}}">About</a></li>
 								<li><a href="#">Pages</a>
 									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
+										
+										<li><a href="{{url_for('main.about')}}">About</a></li>
+										<li><a href="{{url_for('main.cart')}}">Cart</a></li>
+										<li><a href="{{url_for('main.checkout')}}">Check Out</a></li>
+										<li><a href="{{url_for('main.contact')}}">Contact</a></li>
+										<li><a href="{{url_for('main.news')}}">News</a></li>
+										<li><a href="{{url_for('main.shop')}}">Shop</a></li>
 									</ul>
 								</li>
-								<li><a href="news.html">News</a>
+								<li><a href="{{url_for('main.news')}}">News</a>
 									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
+										<li><a href="{{url_for('main.news')}}">News</a></li>
+										<li><a href="{{url_for('main.single')}}">Single News</a></li>
 									</ul>
 								</li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
+								<li><a href="{{url_for('main.contact')}}">Contact</a></li>
+								<li><a href="{{url_for('main.shop')}}">Shop</a>
 									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
+										<li><a href="{{url_for('main.shop')}}">Shop</a></li>
+										<li><a href="{{url_for('main.checkout')}}">Check Out</a></li>
+										<li><a href="{{url_for('main.single')}}">Single Product</a></li>
+										<li><a href="{{url_for('main.cart')}}">Cart</a></li>
 									</ul>
 								</li>
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="shopping-cart" href="{{url_for('main.cart')}}"><i class="fas fa-shopping-cart"></i></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
@@ -213,7 +213,7 @@
     	<div class="container">
         	<h3>December sale is on! <br> with big <span class="orange-text">Discount...</span></h3>
             <div class="sale-percent"><span>Sale! <br> Upto</span>50% <span>off</span></div>
-            <a href="shop.html" class="cart-btn btn-lg">Shop Now</a>
+            <a href="{{url_for('main.shop')}}" class="cart-btn btn-lg">Shop Now</a>
         </div>
     </section>
 	<!-- end shop banner -->
@@ -365,9 +365,9 @@
 					<div class="footer-box get-in-touch">
 						<h2 class="widget-title">Get in Touch</h2>
 						<ul>
-							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-							<li>support@fruitkha.com</li>
-							<li>+00 111 222 3333</li>
+							<li>34/8, Nairobi, Kenya.</li>
+							<li>timohmugendi@gmail.com</li>
+							<li>+254 791 417 147</li>
 						</ul>
 					</div>
 				</div>
@@ -375,11 +375,11 @@
 					<div class="footer-box pages">
 						<h2 class="widget-title">Pages</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="{{url_for('main.index')}}">Home</a></li>
+							<li><a href="{{url_for('main.about')}}">About</a></li>
+							<li><a href="{{url_for('main.shop')}}">Shop</a></li>
+							<li><a href="{{url_for('main.news')}}">News</a></li>
+							<li><a href="{{url_for('main.contact')}}">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -403,7 +403,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.</p>
+					<p>Copyrights &copy; 2022 - <a href="">Timothy Mugendi</a>,  All Rights Reserved.</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">
