@@ -41,7 +41,7 @@ def news():
 def shop():
     return render_template("shop.html")
 
-@main.route('/singles')
+@main.route('/single')
 # @login_required
 def single():
     return render_template("single-news.html")
